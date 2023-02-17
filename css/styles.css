@@ -1,0 +1,234 @@
+@font-face {
+    font-family: 'icomoon';
+    src:  url('../fonts/icomoon.eot?8y95ja');
+    src:  url('../fonts/icomoon.eot?8y95ja#iefix') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?8y95ja') format('truetype'),
+        url('../fonts/icomoon.woff?8y95ja') format('woff'),
+        url('../fonts/icomoon.svg?8y95ja#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: block;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-tint:before {
+    content: "\f043";
+}
+.icon-plus-circle:before {
+    content: "\f055";
+}
+.icon-comment:before {
+    content: "\f075";
+}
+
+body {
+    margin: 0;
+    background: #86c9c6 url(../img/fond.png);
+	color: #424953;
+	line-height: 1.8;
+	font-family: "Open Sans", Arial, sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+nav {
+    font-family: 'Slabo 27px', serif;
+    font-weight : normal;
+}
+
+a {
+    color : #1b9ca2;
+}
+
+/* ---------------------- TITRES ---------------------- */
+
+h1 {
+    font-size : 2.5em;
+}
+
+h2 {
+    margin-top : 0.5em;
+    margin-bottom : 0;
+    font-size : 3.5em;
+    text-align : center;
+}
+
+h3 {
+    margin-top : 0;
+    font-size : 1.8em;
+    text-align : center;
+}
+
+.aside-title {
+    font-size : 1.4em;
+    text-align: left;
+}
+
+.section-title span {
+    color : #1b9ca2;
+}
+
+.aside-title span,
+.news dt {
+    color: #b6dfdd;
+}
+
+.news dd {
+    margin : 0;
+}
+
+
+
+/* ---------------------- Bannière ---------------------- */
+
+.site-header {
+    margin-top : 100px;
+    padding-bottom : 25px;
+	border-top: 5px solid #1b9ca2;
+	border-bottom: 5px solid #1b9ca2;
+	background-color: #25b3b4;
+	text-align: center;
+}
+
+/* La police Slabo est héritée de nav */
+.nav-link {
+    display : inline-block;
+    padding : 0 1.2em;
+    color : white;
+    font-size : 1.4em;
+    text-decoration : none;
+}
+
+
+/* ---------------------- MAIN ---------------------- */
+
+main {
+    min-width : 800px;
+    max-width : 1100px;
+    margin-left : auto;
+    margin-right : auto;
+} 
+
+.main-header {
+    /* Nombre de caractères idéal pour la lisibilité d'une ligne : 36 signes */
+    max-width : 36em;
+    margin : 0 auto;
+    text-align : center;
+}
+
+section {
+    float : left;
+    width : calc(70% - 5px - 1em - 2em);
+    padding : 0 1em;
+    background-color: #b6dfdd;
+}
+
+aside {
+    float : right;
+    width : calc(30% - 5px - 1em - 2em); 
+    PADDING : 0 1em 1em 1em;
+    background-color: #25b3b4;
+    border: 5px solid #1b9Ca2;
+    color : white;
+}
+
+article {
+    display : inline-block;
+    width : calc(50% - 4em);
+    margin : 0 2em 2em;
+    vertical-align : top;
+}
+
+.article-picture {
+    float : left;
+    width : 30%;
+    margin-right : .5em;
+    border-radius : 50%;
+}
+
+.aside-sticker {
+    float : right;
+    margin: -50px -50px 0 0;
+}
+
+
+
+
+/* ---------------------- PIED DE PAGE ---------------------- */
+
+footer {
+    clear : both;    
+    font-size : .75em;
+    text-align : center;
+}
+
+footer img {
+    width : 50px;
+    margin-top : 2em;
+    height : auto;
+}
+
+
+/* ---------------------- CLASSES ---------------------- */
+
+.cta {
+    display : inline-block;
+    float : right;
+    
+	background-color: #1B9CA2;
+	padding: .25em .9em;
+	
+	font-family: "Slabo 27px";
+	font-size: 1.1em;
+	color: white;
+	text-decoration: none;
+}
+
+.cta::after {
+    content: "\00a0\f055";
+    font-family: 'icomoon' !important;
+    line-height : 1;
+    font-size : 1.1em;
+}
+
+
+/* -- PSEUDO ELEMENT et CONTENUS GÉNÉRÉS EN CSS : Introduction */
+
+
+h3::before,
+h3::after {
+    font-family: 'icomoon' !important;
+    speak: never;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    color : #1b9ca2;
+}
+
+h3::before {
+    content: "\f043\00a0";
+}
+
+h3::after {
+    content: "\00a0\f043";
+}
+  
+  
